@@ -1,0 +1,6 @@
+currency.settings_form:
+  title: currency
+  description: Configure currency.
+  parent: system.admin_config_system
+  route_name: currency.settings_form
+  weight: 10

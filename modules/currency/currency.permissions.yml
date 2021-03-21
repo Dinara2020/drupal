@@ -1,0 +1,4 @@
+administer currency configuration:
+  title: 'Administer currency configuration'
+  description: 'Optional description.'
+  restrict access: true

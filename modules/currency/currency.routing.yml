@@ -1,0 +1,16 @@
+currency.example:
+  path: '/currency'
+  defaults:
+    _title: 'Модуль "валюты"'
+    _controller: '\Drupal\currency\Controller\CurrencyController::build'
+  requirements:
+    _permission: 'access content'
+
+currency.settings_form:
+  path: '/admin/config/system/currency'
+  defaults:
+    _controller: '\Drupal\currency\Controller\CurrencyController::mymodule_menu'
+    _title: 'Настройка модуля "Валюты"'
+    _form: 'Drupal\currency\Form\SettingsForm'
+  requirements:
+    _permission: 'administer currency configuration'

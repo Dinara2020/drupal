@@ -1,0 +1,6 @@
+services:
+  currency.event_subscriber:
+    class: Drupal\currency\EventSubscriber\CurrencySubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }
